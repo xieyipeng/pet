@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ffe66b"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_mine99"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="帖    子"
+            android:textColor="@color/title_text"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/fragment_card_back"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tubiao_fanhui"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.flyco.tablayout.SlidingTabLayout
+            app:tl_textSelectColor="@color/title_text"
+            app:tl_textUnselectColor="#ffe66b"
+            app:tl_divider_color="@color/title_text"
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffe66b"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:tl_indicator_corner_radius="1dp"
+            app:tl_indicator_height="2dp"
+            app:tl_indicator_width="40dp"
+            app:tl_tab_space_equal="true" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/viewPager_container3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

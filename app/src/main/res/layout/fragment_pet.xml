@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_mine33"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:textColor="@color/title_text"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="我的宠物"/>
+    </RelativeLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:background="#f3ffb8"
+            android:visibility="gone"
+            android:id="@+id/n_pet_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/linearLayout2">
+                    <ImageView
+                        android:src="@drawable/tubiao_dog"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                    <TextView
+                        android:gravity="center"
+                        android:text="    您还没有宠物呢，赶快点击右下角添加您的宠物吧 ！"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/float_button_add_pet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="88dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
+                    app:layout_anchor="@id/app_bar"
+                    app:layout_anchorGravity="bottom|end"
+                    app:srcCompat="@drawable/tubiao_tianjia" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/y_pet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <FrameLayout
+                android:scaleType="centerCrop"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image_back_pet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:background="#00ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3">
+                        <RelativeLayout
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:layout_alignParentBottom="true"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_height="wrap_content">
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/circleImageView_mine30"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    />
+                                <TextView
+                                    android:id="@+id/text_pet_id"
+                                    android:textColor="#fcf9f9"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center"
+                                    android:text="ID:HQZ8576"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="#9f979797"
+                        android:orientation="horizontal"
+                        android:padding="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="宠物姓名"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:id="@+id/test_pet_name"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:text="黑胖"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:text="宠物年龄"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:id="@+id/test_pet_age"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:text="3岁"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="宠物性别"
+                                android:textColor="#ffffff" />
+                            <TextView
+                                android:id="@+id/test_pet_sex"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:text="雌"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:background="@drawable/back6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+                <LinearLayout
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="#abffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+                    <LinearLayout
+                        android:background="@drawable/shape_line3"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:background="@drawable/tubiao_tiezi"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/text_pet_change"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="修改宠物资料" />
+                        <ImageView
+                            android:background="@drawable/tubiao_you"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="@drawable/shape_line3"
+                        android:layout_marginTop="28dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:background="@drawable/tubiao_dingdan"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                        <TextView
+                            android:id="@+id/text_pet_find_life"
+                            android:gravity="center_vertical"
+                            android:text="萌宠生活录"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:background="@drawable/tubiao_you"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="@drawable/shape_line3"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:background="@drawable/tubiao_yuding"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                        <TextView
+                            android:id="@+id/text_pet_life_add"
+                            android:gravity="center_vertical"
+                            android:text="新建萌宠生活录"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:background="@drawable/tubiao_you"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="23dp"
+                            android:layout_height="23dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

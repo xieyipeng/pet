@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title_video"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="上传宠物的位置"
+            android:textColor="@color/title_text"
+            android:textSize="16sp" />
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/fragment_location_back"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tubiao_fanhui"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginRight="20dp"
+                android:layout_width="35dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="35dp"
+                    android:src="@drawable/tubiao_jingwei"
+                    android:layout_height="35dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经度："
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_jingdu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="纬度："
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"/>
+
+                    <EditText
+                        android:id="@+id/edit_weidu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(默认数据为当前位置的经度和纬度)"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/checkbox_1"
+                android:text="猫咪"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_2"
+                android:text="狗狗"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_3"
+                android:text="小羊驼"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_4"
+                android:text="小胖猪"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/checkbox_5"
+                android:text="鹦鹉"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_6"
+                android:text="仓鼠"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_7"
+                android:text="小乌龟"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_8"
+                android:text="流氓兔"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/checkbox_9"
+                android:text="变色龙"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/checkbox_10"
+                android:text="其他"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:background="@drawable/shape_line3"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/checkbox_11"
+                    android:text="处于发情期"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/button_upload_location"
+            android:background="@drawable/shape_line1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="上       传"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

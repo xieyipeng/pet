@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.example.a13834598889.lovepets"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86","arm64-v8a","x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.youth.banner:banner:1.4.10'
+
+
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+
+
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+
+    compile 'cn.bmob.android:bmob-push:0.8'
+
+    compile 'cn.bmob.android:bmob-im:2.0.5@aar'
+    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
+
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+
+    compile 'cn.bmob.android:http-legacy:1.0'
+
+    compile 'com.netease.nimlib:basesdk:4.4.0'
+
+    compile 'com.netease.nimlib:nrtc:4.4.0'
+
+    compile 'com.netease.nimlib:avchat:4.4.0'
+
+    implementation files('libs/BaiduLBS_Android.jar')
+
+   implementation 'cn.jzvd:jiaozivideoplayer:6.2.10'
+
+
+}

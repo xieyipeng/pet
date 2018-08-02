@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e4e4e4"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_mine22"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/button_add"
+                android:background="@drawable/tubiao_tianjia_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:textColor="@color/title_text"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="附近宠物"/>
+    </RelativeLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+    <LinearLayout
+        android:background="#ffe66b"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_line2"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/edit_serch_zhonglei"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="搜 索 附 近 小 动 物"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/image_button_serch_around"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tubiao_serch" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:background="@drawable/shape_line2"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="太原" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/geocodekey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="中北大学" />
+
+                <Button
+                    android:background="@drawable/shape_line1"
+                    android:id="@+id/serch_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="G o" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_map_info"
+                android:visibility="gone"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="20dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="clip_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/test_touxiang3"
+                    android:layout_margin="4dp"
+                    android:id="@+id/image_view"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/text_view_id"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/text_view"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <com.baidu.mapapi.map.MapView
+                    android:layout_margin="8dp"
+                    android:id="@+id/bmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+
+                <Button
+                    android:background="@drawable/tubiao_dingwei"
+                    android:id="@+id/dw_bt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="30dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

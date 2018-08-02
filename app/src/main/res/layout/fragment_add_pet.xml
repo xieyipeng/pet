@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ProgressBar
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:id="@+id/add_pet_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="添加我的宠物"
+            android:textColor="@color/title_text"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/fragment_add_pet_back"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tubiao_fanhui"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:background="@drawable/shape_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+
+            android:text="图        片"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/test_touxiang2"
+                android:id="@+id/add_pet_image"
+                android:layout_width="70dp"
+                android:layout_centerInParent="true"
+                android:layout_height="70dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/choose_from_document_pet"
+                android:src="@drawable/tubiao_document"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="年        龄"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/edit_add_pet_age"
+                    android:textSize="15sp"
+                    android:hint="input"
+                    android:background="@null"
+                    android:text="2"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:ellipsize="end"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="   岁"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="种        类"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_add_pet_zhonglei"
+                android:textSize="15sp"
+                android:background="@null"
+                android:text="小猫"
+                android:hint="input"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="爱        称"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edit_add_pet_name"
+                android:textSize="15sp"
+                android:background="@null"
+                android:text="黑胖"
+                android:hint="input"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:ellipsize="end"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/shape_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:text="性        别"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <CheckBox
+                    android:id="@+id/checkbox_xiong"
+                    android:text="雄性"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <CheckBox
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/checkbox_ci"
+                    android:text="雌性"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_add_pet"
+            android:background="@drawable/shape_line1"
+            android:layout_gravity="center_horizontal"
+            android:text="添        加"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

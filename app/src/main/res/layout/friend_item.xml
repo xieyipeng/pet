@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/shape_friends"
+    android:layout_margin="3dp"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <FrameLayout
+                android:id="@+id/persion_information_layout"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/tou_xiang_image_view"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/test_touxiang2"
+                        android:layout_margin="8dp"
+                        android:layout_height="40dp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.8"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:textSize="15sp"
+                                android:id="@+id/ni_cheng_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:text="Century" />
+
+                            <TextView
+                                android:id="@+id/ge_xing_qian_ming_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="2dp"
+                                android:textSize="12sp"
+                                android:maxLines="2"
+                                android:text="From now on，I will expect nothing, and just take what I get " />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layout_caozuo_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.13"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="60dp">
+
+
+                <ImageView
+                    android:id="@+id/dian_zan_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dianzan"/>
+                <TextView
+                    android:id="@+id/dian_zan_shu_text_view"
+                    android:layout_width="40dp"
+                    android:gravity="center"
+                    android:text="9999"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

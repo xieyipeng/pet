@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="#ffe66b"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_View_mine_tiezi_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_no_star"
+        android:background="#f3ffb8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="300dp">
+            <ImageView
+                android:src="@drawable/tubiao_tiezi_back"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+            <TextView
+                android:textSize="16sp"
+                android:text="您还未收藏任何帖子哦！"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

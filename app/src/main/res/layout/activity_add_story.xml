@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/card_upload_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_title_add_story"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="创建帖子"
+            android:textColor="@color/title_text"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/fragment_new_card_back"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/tubiao_fanhui"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:background="@color/title_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <ImageView
+                    android:id="@+id/my_little_story_background"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/float_button_add_card_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="bottom|end"
+                    app:layout_anchor="@id/app_bar"
+                    app:layout_anchorGravity="bottom|end"
+                    app:srcCompat="@drawable/tubiao_tianjia" />
+
+            </FrameLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/layout_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <LinearLayout
+                        android:id="@+id/layout_1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edit_text_story_title"
+                            android:layout_gravity="center"
+                            android:hint="Title"
+                            android:maxLines="1"
+                            android:textSize="28sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:layout_margin="10dp"
+                            android:id="@+id/edit_text_story_content"
+                            android:hint="        Please input your story here"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <Button
+            android:background="@drawable/tubiao_fabiao"
+            android:id="@+id/publish_button"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp" />
+    </FrameLayout>
+
+</LinearLayout>

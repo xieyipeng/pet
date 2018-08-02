@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register_back"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/shape_friends"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tubiao_qiuyou" />
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#707070" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/register_name_editText"
+                        android:hint="账            号"
+                        android:gravity="center"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#848484"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tubiao_yuding" />
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#707070" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/register_mima_editText"
+                        android:hint="密            码"
+                        android:gravity="center"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#848484"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical">
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/tubiao_dianhua" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#707070" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/register_phone_editText"
+                        android:hint="手     机     号"
+                        android:gravity="center"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="#848484"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tubiao_youxiang" />
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
+                        android:background="#707070" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/register_emile_editText"
+                        android:hint="邮            箱"
+                        android:gravity="center"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="81dp"
+            android:text="注   册"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/register_account_button"
+            android:text="注                  册"
+            android:textSize="17dp"
+            android:textColor="#454545"
+            android:background="@drawable/shape_line1"
+            android:layout_marginBottom="70dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+    </RelativeLayout
+>
+
+
+
+</LinearLayout>

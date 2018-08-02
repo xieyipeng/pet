@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:padding="3dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_share_item_circleView"
+                        android:layout_width="35dp"
+                        android:src="@drawable/test_touxiang3"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="4dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/text_share_item_idName"
+                                android:textColor="#2d2d2d"
+                                android:textSize="14sp"
+                                android:text="Deamon"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:id="@+id/text_share_item_ID"
+                                android:textColor="#2d2d2d"
+                                android:layout_marginTop="2dp"
+                                android:textSize="14sp"
+                                android:ellipsize="end"
+                                android:text="ID：he123"
+                                android:maxLines="1"
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/text_share_item_time"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="9dp"
+                                android:gravity="center"
+                                android:text="2018.9.28"
+                                android:textSize="10sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/text_share_item_signture"
+                        android:textColor="#2d2d2d"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="折磨人的不是离别而是忘不了的回忆，它很容易让你站在原地以为还回得去。"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:background="#bababa"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/text_share_item_title"
+                        android:text="论狗狗的食量"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:textSize="19sp"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:id="@+id/text_share_item_context"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:text="    饲主一定会发现，大部份的狗吃饭时，一定会一口气把食物一扫而空，几乎没有吞咽，
+就像吸尘器一样。因此，常常就会把喂食量增加，也因此有许多狗狗的身材就像吹气球一样变形了。
+其实这是狗的饮食天性，有句话叫做“狼吞虎咽”指的更是传神，野生的狗群今天猎捕到食物，
+下一餐不知道有没有著落，所以都是用抢的，用吞的。看看狗狗的牙齿也可以知道，
+狗的臼齿一样十分坚锐，没有磨合面，不可能像牛马一样细嚼慢咽。
+尖锐的牙帮助它们撕裂食物吞下。该喂多少量才是正常呢？如果你喂食的是乾狗粮，
+那么包装上一定会清楚地标示喂食的建议量，另一个方法是直接看狗的外形，
+保持有腰身，背部脊椎骨脊突不会太过明显，呼吸时仍然可以看见肋骨，
+这样就是优美的体形。不要每次别人看到你的狗狗都把他误认为是迷你猪，
+相信这样反而更没面子！"
+                        />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/image_share_item_image"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/caozuo_layout_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_marginBottom="7dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/text_dianzanshu"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="点赞数：0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:id="@+id/caozuo_layout"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/image_button_dianzan"
+                                android:src="@drawable/tubiao_dianzan"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp" />
+                            <ImageView
+                                android:id="@+id/image_button_shoucang"
+                                android:src="@drawable/tubiao_shoucang"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp" />
+                            <ImageView
+                                android:id="@+id/image_button_jiahaoyou"
+                                android:src="@drawable/tubiao_qiuyou"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

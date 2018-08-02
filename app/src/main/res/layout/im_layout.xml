@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/back3"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:background="#baffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView_im_image"
+                    android:src="@drawable/tubiao_start"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/text_im_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:text="小猪佩奇"
+                android:textColor="@color/title_text"
+                android:textSize="15sp" />
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/fragment_im_back"
+                    android:layout_centerInParent="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/tubiao_fanhui"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:background="@color/title_cut_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/msg_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_marginBottom="6dp"
+            android:background="#edecec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+                <RelativeLayout
+                    android:background="@drawable/shape_line2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_centerInParent="true"
+                        android:id="@+id/input_text"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@null"
+                        android:hint="Type something here"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/send"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/shape_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="发  送" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
